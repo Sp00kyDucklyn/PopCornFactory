@@ -11,7 +11,7 @@ class DetallePelicula : AppCompatActivity() {
 
     private lateinit var iv_pelicula_imagen:ImageView
     private lateinit var tv_nombre_pelicula:TextView
-    private lateinit var tv_pelicula_desc: TextView
+    private lateinit var tv_pelicula_desc:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

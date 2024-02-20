@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black_background"
     tools:context=".DetallePelicula">
 
     <LinearLayout
@@ -15,24 +16,54 @@
         <ImageView
             android:id="@+id/iv_pelicula_imagen"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:src="@drawable/bighero6"/>
+
+            />
 
         <TextView
             android:id="@+id/tv_nombre_pelicula"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BIG HERO 6"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:gravity="center"/>
 
-        <TextView
-            android:id="@+id/tv_pelicula_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="asd"
-            android:textSize="20sp" />
+        <View
+            android:layout_width="276dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pelicula_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/comprar_boletos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUY MY TICKET!"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:textColor="@color/black_background"
+        android:paddingHorizontal="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/asientos_izquierda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grisclaro"
+        android:textStyle="italic"
+        android:layout_marginTop="7dp"
+        />
 
 </LinearLayout>
